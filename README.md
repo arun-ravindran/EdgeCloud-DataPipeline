@@ -1,5 +1,5 @@
 # Edge-cloud data pipeline for object detection
-- ImageCapture, NATS, YOLO, InfluxDB, and Orchestrator are runs as Docker container microservices
+- ImageCapture, NATS, YOLO, InfluxDB, and Orchestrator are run as Docker container microservices
 - Images are captured from video camera and published to NATS (Python, ImageCapture microservice)
 - The Orchestrator subscribes to images from NATs, and sends to YOLO (Golang, Orchestrator microservice)
 - The object detections from YOLO, are then sent to InfluxDB 
